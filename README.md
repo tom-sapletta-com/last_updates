@@ -79,4 +79,16 @@ YYYY-MM-DD /path/to/folder
 ```
 
 
+## Example
+
+Example Results: 
+
+```
+2024-10-02 github/documentation
+2024-10-10 github/team-B/frontend-app
+2024-10-15 github/team-A/database-module
+2024-10-22 github/main-project
+2024-10-25 github/team-C/api-gateway
+2024-10-30 github/experimental-feature
+```
 
