@@ -103,3 +103,31 @@ Example Results:
 2024-10-30 github/experimental-feature
 ```
 
+
+# python
+
+This Python script replicates the functionality of the Bash script. Here's a breakdown of its key components:
+
+use `argparse` to handle command-line arguments, allowing users to specify the search path and maximum depth.
+
+The `list_recent_readmes` function does the main work:
+   - It calculates the date one month ago.
+   - It walks through the directory structure using `os.walk()`.
+   - It checks the depth of each directory and stops if it exceeds the maximum depth.
+   - For each README.md file found, it checks if it was modified in the last month.
+   - It stores the results in a list of tuples (modification time, folder path).
+
+After collecting all results, it sorts them by date and prints them in the required format.
+
+To use this script:
+
+Save it to a file, for example, `list_recent_readmes.py`.
+Run it from the command line:
+   - With default values: `python list_recent_readmes.py`
+   - With a specific path: `python list_recent_readmes.py /path/to/your/directory`
+   - With a specific path and depth: `python list_recent_readmes.py /path/to/your/directory --max-depth 5`
+
+The output will be in the same format as the Bash script:
+```
+YYYY-MM-DD /path/to/folder
+```
