@@ -64,17 +64,28 @@ Its sorting capability allows for quick identification of the most recent change
 
 To use this script:
 
-Make it executable with the command: `chmod +x list_recent_readmes.sh`.
+Make it executable with the command: 
+```bash
+chmod +x list_recent_readmes.sh
+```
 Run it with specific path and depth:
-`./list_recent_readmes.sh /path/to/your/directory 5`
+```bash
+./list_recent_readmes.sh /path/to/your/directory 5
+```
+
 Or run it with just a path to use the default depth of 3:
-`./list_recent_readmes.sh /path/to/your/directory`
+```bash
+./list_recent_readmes.sh /path/to/your/directory
+```
+
 Or run it without arguments to use both default path "github" and default depth 3:
-`./list_recent_readmes.sh`
+```bash
+./list_recent_readmes.sh
+```
 
 The output will now be in the format:
 
-```
+```bash
 YYYY-MM-DD /path/to/folder
 ```
 
